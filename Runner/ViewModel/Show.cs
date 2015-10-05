@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DotLiquid_ViewModel.ViewModel
+namespace ViewModel
 {
     public class Show
     {

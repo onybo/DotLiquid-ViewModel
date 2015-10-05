@@ -1,8 +1,7 @@
-﻿using DotLiquid;
-using System;
+﻿using System;
 using System.Linq;
 
-namespace DotLiquid_ViewModel
+namespace DotLiquid.ViewModel
 {
     public static class LiquidFunctions
     {

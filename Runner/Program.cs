@@ -1,6 +1,6 @@
 ﻿using DotLiquid;
-using DotLiquid_ViewModel;
-using DotLiquid_ViewModel.ViewModel;
+using DotLiquid.ViewModel;
+using ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,18 +11,17 @@ namespace Runner
     {
         static void Main(string[] args)
         {
-            var department = GetDepartmentAndEmployees();
+            var show = GetTvShow();
 
             LiquidFunctions.RegisterViewModel(typeof(Show));
-            
+
             var template = Template.Parse(
                                 new StreamReader("EmailTemplate.html")
                                                 .ReadToEnd());
-
-            var result = template.RenderViewModel(department);
+            var result = template.RenderViewModel(show);
         }
 
-        private static Show GetDepartmentAndEmployees()
+        private static Show GetTvShow()
         {
             return new Show
             {
