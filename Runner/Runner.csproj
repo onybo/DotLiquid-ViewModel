@@ -55,6 +55,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Show.cd" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="EmailTemplate.html">
